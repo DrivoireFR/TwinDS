@@ -9,6 +9,7 @@ export interface ButtonProps extends Partial<JSX.IntrinsicElements["button"]> {
   filled?: boolean;
   loading?: boolean;
   rounded?: boolean;
+  loadType?: string;
 }
 
 export const Button = (props: ButtonProps) => {
@@ -19,6 +20,7 @@ export const Button = (props: ButtonProps) => {
     filled = false,
     loading = false,
     rounded = true,
+    loadType = "spin",
     ...other
   } = props;
   let colorClasses =
@@ -31,7 +33,7 @@ export const Button = (props: ButtonProps) => {
     <>
       {loading ? (
         <div className="my-auto">
-          <Loader />
+          <Loader borderSize={1} type={loadType}/>
         </div>
       ) : (
         props.icon

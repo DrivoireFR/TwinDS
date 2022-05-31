@@ -151,6 +151,7 @@ Property | Type | Required | Description
 **iconPosition** | `string` | no | Icon's position (`left`or `right`)
 **filled** | `boolean` | no | If button background is filled
 **loading** | `boolean` | no | If button is loading
+**loadType** | `string` | no | Define loader type, spin is default ( bounce | pulse | spin )
 **rounded** | `boolean` | no | If button's angles are rounded
 
 - Usage Exemple : 
@@ -258,6 +259,7 @@ Property | Type | Required | Description
 --- | --- | --- | ---
 **size** | `number` | no | The loader size in `rem`
 **borderSize** | `number` | no | The loader border's size in `px`
+**type** | `string` | no | Define loader type, spin is default ( bounce | pulse | spin )
 
 `Loader` default size is `1rem` and default border's size is `2px`.
 
